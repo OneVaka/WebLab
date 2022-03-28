@@ -1,0 +1,7 @@
+accounts:
+  - name: "Peter"
+    password: "b1b3773a05c0ed0176787a4f1574ff0075f7521e" #qwerty
+  - name: "Val"
+    password: "5116c28e651a19013822c09e5c70c9fc425a66dc" #kek
+  - name: "admin"
+    password: "d033e22ae348aeb5660fc2140aec35850c4da997" #admin

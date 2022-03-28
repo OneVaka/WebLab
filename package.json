@@ -1,0 +1,18 @@
+{
+  "name": "labaserv",
+  "version": "1.0.0",
+  "description": "server dlya lab1",
+  "main": "index_lab.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Gorelov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "node-fetch": "^2.6.7",
+    "pug": "^3.0.2"
+  }
+}

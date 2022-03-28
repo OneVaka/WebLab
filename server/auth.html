@@ -1,0 +1,42 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reg.css" >
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Авторизация</title>
+</head>
+
+<body>
+    <form method="post">
+    <div class="input-wrapper">
+        <input type="text" id="name" name="name" placeholder="your name" />
+    </div>
+    <div class="input-wrapper">
+        <input type="password" id="password" name="password" placeholder="your password" />
+        <div class="input-icon" id="icon" onclick="togglePass()" >
+            <img src="icon.svg">
+        </div>
+    </div>
+    <button type="submit" class="button-33" role="button">Submit</button>
+</form>
+</body>
+
+
+
+
+
+
+<script>
+    function togglePass(){
+        var input = document.getElementById('password')
+        var icon = document.getElementById('icon')
+
+        if(input.type === "password"){
+            input.type = "text"
+            icon.classList.add('selected')
+        } else {
+            input.type = "password"
+            icon.classList.remove('selected')
+        }
+    }
+</script>
