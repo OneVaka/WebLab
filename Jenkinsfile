@@ -6,6 +6,7 @@ pipeline {
                 {  echo 'jenkinsFile'}
             }
             stage('build') {
+                steps{
                 node {
              checkout scm
 
@@ -14,7 +15,7 @@ pipeline {
      customImage.inside {
         sh 'make test'
     }
-}
+                }}
             }
             
         }
