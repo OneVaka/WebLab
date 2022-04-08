@@ -6,9 +6,15 @@ pipeline {
                 {  echo 'jenkinsFile'}
             }
             stage('build') {
-                steps 
-                { echo " ============== start building image =================="
-                sh 'docker build -t git-docker:latest . ' }
+                node {
+             checkout scm
+
+            def customImage = docker.build("my-image:${env.BUILD_ID}")
+
+     customImage.inside {
+        sh 'make test'
+    }
+}
             }
             
         }
