@@ -8,7 +8,7 @@ pipeline {
             stage('build') {
                 steps 
                 { echo " ============== start building image =================="
-                sh 'docker build -t gitDocker:latest . ' }
+                sh 'docker build -t git-docker:latest . ' }
             }
             
         }
