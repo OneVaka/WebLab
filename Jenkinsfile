@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker { image 'docker:dind' }
+        label "Fuckmin"
     }
     stages {
         stage('Test') {
